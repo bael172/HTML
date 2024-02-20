@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chraset="UTF-8">
+        <title>Заголовок</title>
+        <link rel="stylesheet" href="./html1.css">
+    </head>
+    <body>
+        <table border="2 px" align="center">
+            <thead>
+                <tr>
+                    <th>номер</th>
+                    <th>Месяц</th>
+                    <th>Выручка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Январь</td>
+                    <td>1600</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Февраль</td>
+                    <td>2300</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Март</td>
+                    <td>1900</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Апрель</td>
+                    <td>2200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Май</td>
+                    <td>2500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="text-left text-bold">Общая выручка</td>
+                    <td>8700</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <form action="html1.js" align="center">
+            <label for="name">
+                <input type="text" 
+                name="name" 
+                value="Иван" 
+                class="value1"
+                required>
+            </label>
+            <label for="surname"> 
+                <input type="text" 
+                name="surname" 
+                value="Иванов" 
+                class="value1"
+                required>
+            </label>
+            <label for="Ваше Отчество">
+                <input type="text"
+                name="lastname" 
+                value="Иванович"
+                class="value1">
+            </label>
+            <input type="submit" value="Отправить">
+        </form>
+        <button class="btn_cart">
+            <figure class="left">
+                <img src="./cart.svg">
+            </figure>
+            <span>Добавить в корзину</span>
+        </button>
+    </body>
+</html>
